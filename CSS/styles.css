@@ -2,21 +2,52 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Inconsolata', monospace;
 }
 body{
-    background-color: rgb(17, 31, 60);
-     /* background: linear-gradient(to right, rgba(11, 25, 47, 1), rgba(10, 47, 116, 0.9)); */
-    /* background: linear-gradient(to right,
-     red 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80%); */
+    background-color: rgb(7, 23, 50);
+     /* background: linear-gradient(to right, rgba(7, 81, 124, 0.9), rgba(88, 179, 74,)); */
+    /* background-image: url('../Images/bg2.jpg'); */
+   
+    
 }
 header{
-    align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
 }
-header .slogan{
-    color: rgb(107, 244, 218);
+.name{
+    width: 50%;
+}
+.name h3{
+    color: rgb(77, 179, 157);
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+}
+.name h3:hover{
+    text-shadow: 2px 5px 5px white;
+    text-transform: uppercase;
+}
+.name .slogan{
+    color:rgb(77, 179, 157);
     text-align: center;
     font-size: 4vh;
     font-weight: bold;
+    line-height: 1.6;
+    margin-top: 2%;
 
+}
+header img{
+    width: 40%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 4px;
+
+}
+header img:hover{
+    box-shadow: 4px 2px 20px rgb(77, 179, 157);
 }
