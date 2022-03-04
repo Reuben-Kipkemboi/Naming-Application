@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: rgb(17, 31, 60);
+     /* background: linear-gradient(to right, rgba(11, 25, 47, 1), rgba(10, 47, 116, 0.9)); */
+    /* background: linear-gradient(to right,
+     red 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80%); */
+}
+header{
+    align-content: center;
+}
+header .slogan{
+    color: rgb(107, 244, 218);
+    text-align: center;
+    font-size: 4vh;
+    font-weight: bold;
+
+}
