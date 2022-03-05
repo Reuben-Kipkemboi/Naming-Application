@@ -102,3 +102,21 @@ form input[type='button']:hover{
     background: linear-gradient(to left, rgb(77, 179, 157), rgba(107, 244, 217, 0.4));
     color: rgb(7, 23, 50);
 }
+.akan{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3% 10% 0 10%;
+}
+.akan .gender-naming{
+    color: rgb(107, 244, 217);
+}
+.gender-naming h4{
+    font-size: 4vh;
+    font-weight: bold;
+}
+.akan img{
+    height: 20vh;
+    margin-right: -20%;
+}
