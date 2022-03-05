@@ -102,6 +102,6 @@ form input[type='button']{
     font-weight: bolder;
 }
 form input[type='button']:hover{
-    background-color: rgb(77, 179, 157);
-    color: white;
+    background: linear-gradient(to left, rgb(77, 179, 157), rgba(107, 244, 217, 0.4));
+    color: rgb(7, 23, 50);
 }
