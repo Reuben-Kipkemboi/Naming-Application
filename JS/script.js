@@ -1,17 +1,20 @@
 // we store the day of the week in an array
-var weekDays = ["Sunday", "Monday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 // Male names
-var males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+const males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 // Female Names
-var females = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+const females = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 // declare a value that takes the day value
 var CC, YY, MM, DD, dayOfWeek, valueOfDay;
+const maleGender = document.getElementById("male");
+const femaleGender = document.getElementById('female');
 
 // validating the form
 function validate() {
     var day = document.userForm.day.value;
     var month = document.userForm.month.value;
     var year = document.userForm.year.value;
+    
 
     if (day == null || day == "" || day > 31 || day <= 0 || day.length != 2) {
         alert("Kindly enter your correct Date of Birth");
@@ -48,20 +51,55 @@ function calculateDay() {
     MM = parseInt(document.getElementById("month").value);
     DD = parseInt(document.getElementById("day").value);
     dayOfWeek = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
-    alert(dayOfWeek.toFixed());
-    return (dayOfWeek.toFixed(0));
+    let day = dayOfWeek.toFixed(0)
+    console.log(day);
+
+    if(day == 1 && maleGender == male){
+        alert("Your name is" + " " +males[0]+ " " + "And your birthday is on" + " " +weekDays[0]);
+    }else if(day == 2 && maleGender == male){
+        alert("Your name is" + " " +males[1]+ " " + "And your birthday is on" + " " +weekDays[1]);
+    }else if(day == 3 && maleGender == male){
+        alert("Your name is" + " " +males[2]+ " " + "And your birthday is on" + " " +weekDays[2]);
+    }else if(day == 4 && maleGender == male){
+        alert("Your name is" + " " +males[3]+ " " + "And your birthday is on" + " " +weekDays[3]);
+    }else if(day == 4 && maleGender == male){
+        alert("Your name is" + " " +males[4]+ " " + "And your birthday is on" + " " +weekDays[4]);
+    }else if(day == 5 && maleGender == male){
+        alert("Your name is" + " " +males[5]+ " " + "And your birthday is on" + " " +weekDays[5]);
+    }
+    else if(day == 6 && maleGender == male){
+        alert("Your name is" + " " +males[6]+ " " + "And your birthday is on" + " " +weekDays[6]);
+    }
+     else
+     if(day == 1 && maleGender == female){
+            alert("Your name is" + " " +females[0]+ " " + "And your birthday is on" + " " +weekDays[0]);
+     }else if(day == 2 && maleGender == female){
+        alert("Your name is" + " " +females[1]+ " " + "And your birthday is on" + " " +weekDays[1]);
+ }
 }
 
 //alert(objColors.options[objColors.selectedIndex].text); // Display the text; in this example, "red", "green", and "blue"
 //alert(objColors.selectedIndex); // Display the index number; in this example, red is 0, green is 1, and blue is 2
-function gender() {
-    let userGender = document.getElementById('gender').value;
-    console.log(userGender);
-    if (userGender[0].selected == true) {
-        var gender = "male";
-    } else if (userGender[1].selected == true) {
-        var gender = "female";  
-    } else{
-        return false;
-    }
-}   
+// function gender() {
+//     let userGender = document.getElementById('gender').value;
+//     alert(userGender);  
+//     if (userGender[0].selected == true) {
+//         console.log(userGender);
+//     // } 
+//     // else if (userGender[1].selected == true) {
+//     //     var gender = "female";  
+//     // } else{
+//     //     return false;
+//     // }
+// }   
+// switch(gender){
+//     case "male" :
+//         if (valueOfDay == 1){
+//             console.log("Hey, You were Born on" +weekDays[0] +"And Your name is" + males[0]);
+//         }
+// }
+// function userName(){
+//     valueOfDay = calculateDay();
+//     gender();
+// }
+
