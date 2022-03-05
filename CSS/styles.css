@@ -33,7 +33,8 @@ header{
     text-transform: uppercase;
 }
 .name .slogan{
-    color:rgb(77, 179, 157);
+    /* color:rgb(77, 179, 157); */
+    color: rgb(107, 244, 217);
     text-align: center;
     font-size: 4vh;
     font-weight: bold;
@@ -50,4 +51,43 @@ header img{
 }
 header img:hover{
     box-shadow: 4px 2px 20px rgb(77, 179, 157);
+}
+.form{
+    margin-top: 3%;
+    background-color: white;
+    padding: 8px 10px;
+}
+fieldset{
+    margin: 2% 5% 0 5%;
+    padding: 20px;
+    border: 2px solid rgb(7, 23, 50);
+}
+fieldset legend{
+    color: rgb(7, 23, 50);
+    font-size: 3vh;
+    font-weight: bold;  
+}
+form label{
+    font-size: 3.5vh;
+    font-weight: bold;
+}
+form input[type='text']{
+    color: rgb(7, 23, 50);
+    width: 25%;
+    height: 5vh;
+    font-style: italic;
+    font-weight: bold;
+}
+label span{
+    font-weight: bold;
+    color: red;
+}
+form select{
+    width: 25%;
+    height: 5vh;
+}
+select option{
+    font-weight: bold;
+    color: rgb(7, 23, 50);
+    width: 100%;
 }
