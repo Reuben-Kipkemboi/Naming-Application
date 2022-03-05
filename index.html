@@ -7,11 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Images/icon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/styles.css">
     <title>Ghanian-Naming</title>
 </head>
@@ -21,12 +18,12 @@
     <header>
         <img src="./Images/image.webp" alt="my-name">
         <div class="name">
-        <h3>Know Your Akan Name.</h3>
-        <p class="slogan">Get to know your Akan Name by a click of A button.
-            Just use your birthday Date and your gender and know the specific day you
-            were born.
-        </p>
-    </div>
+            <h3>Know Your Akan Name.</h3>
+            <p class="slogan">Get to know your Akan Name by a click of A button.
+                Just use your birthday Date and your gender and know the specific day you
+                were born.
+            </p>
+        </div>
     </header>
     <main>
         <section class="form">
@@ -34,15 +31,15 @@
                 <legend>DAY, MONTH AND YEAR YOU WERE BORN</legend>
                 <form>
                     <!-- User form fields  -->
-                    <label for="birthDay">ENTER  YOUR DATE OF BIRTH <span>*</span></label>
+                    <label for="birthDay">ENTER YOUR DATE OF BIRTH <span>*</span></label>
                     <br>
-                    <input type="text" id ="day" name="day" placeholder="Date of Birth in figures" required>
+                    <input type="number" id="day" name="day" placeholder="Date of Birth in figures" required>
                     <br><br>
-                    <label for="birthDay">ENTER  YOUR MONTH OF BIRTH <span>*</span></label><br>
-                    <input type="text" id ="month" name="month" placeholder="Month of Birth in figures" required>
+                    <label for="birthDay">ENTER YOUR MONTH OF BIRTH <span>*</span></label><br>
+                    <input type="number" id="month" name="month" placeholder="Month of Birth in figures" required>
                     <br><br>
-                    <label for="birthDay">ENTER  YOUR YEAR OF BIRTH <span>*</span></label><br>
-                    <input type="text" id ="year" name="year" placeholder="Year of Birth in figures" required>
+                    <label for="birthDay">ENTER YOUR YEAR OF BIRTH <span>*</span></label><br>
+                    <input type="number" id="year" name="year" placeholder="Year of Birth in figures" required>
 
                     <br><br>
                     <label for="gender">SELECT YOUR GENDER <span>*</span></label>
@@ -59,7 +56,7 @@
             </fieldset>
         </section>
     </main>
-<!-- javascript link -->
+    <!-- javascript link -->
     <script src="./JS/script.js"></script>
 </body>
 
