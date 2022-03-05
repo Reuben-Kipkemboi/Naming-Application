@@ -8,6 +8,7 @@ const females = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 var CC, YY, MM, DD, dayOfWeek, valueOfDay;
 const maleGender = document.getElementById("male");
 const femaleGender = document.getElementById('female');
+let btn = document.getElementById('submit')
 
 // validating the form
 function validate() {
@@ -47,11 +48,11 @@ function validate() {
 function calculateDay() {
     year = document.getElementById("year").value;
     CC = parseInt(year.slice(0, 2));
-    YY = parseInt(year.slice(2.4));
+    YY = parseInt(year.slice(2));
     MM = parseInt(document.getElementById("month").value);
     DD = parseInt(document.getElementById("day").value);
     dayOfWeek = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
-    let day = dayOfWeek.toFixed(0)
+    let day = dayOfWeek.toFixed(0);
     console.log(day);
 
     if(day == 1 && maleGender == male){
@@ -76,6 +77,12 @@ function calculateDay() {
     //  }else if(day == 2 && maleGender == female){
     //     alert("Your name is" + " " +females[1]+ " " + "And your birthday is on" + " " +weekDays[1]);
  }
+
+ btn.addEventListener('click', function(e){
+     e.preventDefault ();
+     validate();
+
+ });
 
 //alert(objColors.options[objColors.selectedIndex].text); // Display the text; in this example, "red", "green", and "blue"
 //alert(objColors.selectedIndex); // Display the index number; in this example, red is 0, green is 1, and blue is 2
