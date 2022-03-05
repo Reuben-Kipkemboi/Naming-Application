@@ -5,9 +5,11 @@ const males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 // Female Names
 const females = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 // declare a value that takes the day value
+var day
 var CC, YY, MM, DD, dayOfWeek, valueOfDay;
-const maleGender = document.getElementById("male");
-const femaleGender = document.getElementById('female');
+const gender = document.getElementById("gender");
+// const maleGender = document.getElementById("male");
+// const femaleGender = document.getElementById('female');
 let btn = document.getElementById('submit')
 
 // validating the form
@@ -15,8 +17,6 @@ function validate() {
     var day = document.userForm.day.value;
     var month = document.userForm.month.value;
     var year = document.userForm.year.value;
-    
-
     if (day == null || day == "" || day > 31 || day <= 0 || day.length != 2) {
         alert("Kindly enter your correct Date of Birth");
         return false;
@@ -47,13 +47,14 @@ function validate() {
 
 function calculateDay() {
     year = document.getElementById("year").value;
-    CC = parseInt(year.slice(0, 2));
-    YY = parseInt(year.slice(2));
+    CC = parseInt(year.slice(0,2));
+    YY = parseInt(year.substring(2));
     MM = parseInt(document.getElementById("month").value);
     DD = parseInt(document.getElementById("day").value);
     dayOfWeek = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
     let day = dayOfWeek.toFixed(0);
     console.log(day);
+    return day;
 
     if(day == 1 && maleGender == male){
         alert("Your name is" + " " +males[0].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[0].toUpperCase());
@@ -71,41 +72,13 @@ function calculateDay() {
     else if(day == 6 && maleGender == male){
         alert("Your name is" + " " +males[6].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[6].toUpperCase());
     }
-    //  else
-    //  if(day == 1 && maleGender == female){
-    //         alert("Your name is" + " " +females[0]+ " " + "And your birthday is on" + " " +weekDays[0]);
-    //  }else if(day == 2 && maleGender == female){
-    //     alert("Your name is" + " " +females[1]+ " " + "And your birthday is on" + " " +weekDays[1]);
  }
 
  btn.addEventListener('click', function(e){
      e.preventDefault ();
      validate();
 
- });
+     calculateDay();
 
-//alert(objColors.options[objColors.selectedIndex].text); // Display the text; in this example, "red", "green", and "blue"
-//alert(objColors.selectedIndex); // Display the index number; in this example, red is 0, green is 1, and blue is 2
-// function gender() {
-//     let userGender = document.getElementById('gender').value;
-//     alert(userGender);  
-//     if (userGender[0].selected == true) {
-//         console.log(userGender);
-//     // } 
-//     // else if (userGender[1].selected == true) {
-//     //     var gender = "female";  
-//     // } else{
-//     //     return false;
-//     // }
-// }   
-// switch(gender){
-//     case "male" :
-//         if (valueOfDay == 1){
-//             console.log("Hey, You were Born on" +weekDays[0] +"And Your name is" + males[0]);
-//         }
-// }
-// function userName(){
-//     valueOfDay = calculateDay();
-//     gender();
-// }
+ });
 
