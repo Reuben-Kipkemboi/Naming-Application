@@ -91,3 +91,17 @@ select option{
     color: rgb(7, 23, 50);
     width: 100%;
 }
+form input[type='button']{
+    padding: 8px;
+    width: 30%;
+    color: rgb(107, 244, 217);
+    font-size: 4vh;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(7, 23, 50);
+    font-weight: bolder;
+}
+form input[type='button']:hover{
+    background-color: rgb(77, 179, 157);
+    color: white;
+}
