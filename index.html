@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./Images/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./Images/name.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
@@ -33,10 +33,10 @@
                     <!-- User form fields  -->
                     <label for="birthDay">ENTER YOUR DATE OF BIRTH <span>*</span></label>
                     <br>
-                    <input type="number" id="day" name="day" placeholder="DOB e,g 12 for 12th day of the month" required>
+                    <input type="number" id="day" name="day" placeholder="DOB e,g 12 for 12th day or 02 of the month" required>
                     <br><br>
                     <label for="birthDay">ENTER YOUR MONTH OF BIRTH <span>*</span></label><br>
-                    <input type="number" id="month" name="month" placeholder="Month of Birth eg 5 for May" required>
+                    <input type="number" id="month" name="month" placeholder="Month of Birth eg 05 for May" required>
                     <br><br>
                     <label for="birthDay">ENTER YOUR YEAR OF BIRTH <span>*</span></label><br>
                     <input type="number" id="year" name="year" placeholder="Year of Birth in figures eg 2022" required>
@@ -51,7 +51,7 @@
                     </select>
                     <br><br>
                     <!-- The submit button -->
-                    <input type="button" name = "submit" value="VIEW NAME" onclick="validate()">
+                    <input type="button" name = "submit" value="VIEW NAME &#187;" onclick="calculateDay()">
                 </form>
                 <div class="message"></div>
             </fieldset>
