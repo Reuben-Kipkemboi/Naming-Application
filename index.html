@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <!-- brief intro about the application -->
     <header>
         <img src="./Images/image.webp" alt="my-name">
         <div class="name">
@@ -24,7 +25,6 @@
         <p class="slogan">Get to know your Akan Name by a click of A button.
             Just use your birthday Date and your gender and know the specific day you
             were born.
-
         </p>
     </div>
     </header>
@@ -33,30 +33,33 @@
             <fieldset>
                 <legend>DAY, MONTH AND YEAR YOU WERE BORN</legend>
                 <form>
+                    <!-- User form fields  -->
                     <label for="birthDay">ENTER  YOUR DATE OF BIRTH <span>*</span></label>
                     <br>
-                    <input type="text" id ="day" name="day" placeholder="Date of Birth in figures">
+                    <input type="text" id ="day" name="day" placeholder="Date of Birth in figures" required>
                     <br><br>
                     <label for="birthDay">ENTER  YOUR MONTH OF BIRTH <span>*</span></label><br>
-                    <input type="text" id ="month" name="month" placeholder="Month of Birth in figures">
+                    <input type="text" id ="month" name="month" placeholder="Month of Birth in figures" required>
                     <br><br>
                     <label for="birthDay">ENTER  YOUR YEAR OF BIRTH <span>*</span></label><br>
-                    <input type="text" id ="year" name="year" placeholder="Year of Birth in figures">
+                    <input type="text" id ="year" name="year" placeholder="Year of Birth in figures" required>
 
                     <br><br>
                     <label for="gender">SELECT YOUR GENDER</label>
                     <br>
-                    <select name="gender" id="gender">
+                    <!-- select option for gender -->
+                    <select name="gender" id="gender" required>
                         <option value="male">MALE</option>
                         <option value="female">FEMALE</option>
                     </select>
                     <br><br>
+                    <!-- The submit button -->
                     <input type="button" value="VIEW NAME">
                 </form>
             </fieldset>
         </section>
     </main>
-
+<!-- javascript link -->
     <script src="./JS/script.js"></script>
 </body>
 
