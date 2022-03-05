@@ -55,28 +55,27 @@ function calculateDay() {
     console.log(day);
 
     if(day == 1 && maleGender == male){
-        alert("Your name is" + " " +males[0]+ " " + "And your birthday is on" + " " +weekDays[0]);
+        alert("Your name is" + " " +males[0].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[0].toUpperCase());
     }else if(day == 2 && maleGender == male){
-        alert("Your name is" + " " +males[1]+ " " + "And your birthday is on" + " " +weekDays[1]);
+        alert("Your name is" + " " +males[1].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[1].toUpperCase());
     }else if(day == 3 && maleGender == male){
-        alert("Your name is" + " " +males[2]+ " " + "And your birthday is on" + " " +weekDays[2]);
+        alert("Your name is" + " " +males[2].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[2].toUpperCase());
     }else if(day == 4 && maleGender == male){
-        alert("Your name is" + " " +males[3]+ " " + "And your birthday is on" + " " +weekDays[3]);
+        alert("Your name is" + " " +males[3].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[3].toUpperCase());
     }else if(day == 4 && maleGender == male){
-        alert("Your name is" + " " +males[4]+ " " + "And your birthday is on" + " " +weekDays[4]);
+        alert("Your name is" + " " +males[4].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[4].toUpperCase());
     }else if(day == 5 && maleGender == male){
-        alert("Your name is" + " " +males[5]+ " " + "And your birthday is on" + " " +weekDays[5]);
+        alert("Your name is" + " " +males[5].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[5].toUpperCase());
     }
     else if(day == 6 && maleGender == male){
-        alert("Your name is" + " " +males[6]+ " " + "And your birthday is on" + " " +weekDays[6]);
+        alert("Your name is" + " " +males[6].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[6].toUpperCase());
     }
-     else
-     if(day == 1 && maleGender == female){
-            alert("Your name is" + " " +females[0]+ " " + "And your birthday is on" + " " +weekDays[0]);
-     }else if(day == 2 && maleGender == female){
-        alert("Your name is" + " " +females[1]+ " " + "And your birthday is on" + " " +weekDays[1]);
+    //  else
+    //  if(day == 1 && maleGender == female){
+    //         alert("Your name is" + " " +females[0]+ " " + "And your birthday is on" + " " +weekDays[0]);
+    //  }else if(day == 2 && maleGender == female){
+    //     alert("Your name is" + " " +females[1]+ " " + "And your birthday is on" + " " +weekDays[1]);
  }
-}
 
 //alert(objColors.options[objColors.selectedIndex].text); // Display the text; in this example, "red", "green", and "blue"
 //alert(objColors.selectedIndex); // Display the index number; in this example, red is 0, green is 1, and blue is 2
