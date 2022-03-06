@@ -53,7 +53,7 @@ function calculateDay(){
 
 function choice() {
     var gender = document.getElementById("gender");
-    let position = calculateDay();
+    let position = calculateDay()-1;
     if (gender.value == 'male') {
         // console.log(males[position]);
         alert("Your name is" + " " + males[position] + " " + "which means a male born on " + " " + weekDays[position]);
@@ -61,9 +61,9 @@ function choice() {
             alert("Your name is" + " " + females[position] + " " + "Which means a female born on" + " " + weekDays[position]);
     }
     else{
-         alert("")
+         alert("ENSURE TO HAVE THE CORRECT DETAILS")
     }
-    return true;
+    return false;
 }
 btn.addEventListener('click', function (e) {
     e.preventDefault();
@@ -71,9 +71,7 @@ btn.addEventListener('click', function (e) {
     calculateDay();
     choice();
     form.reset();
-
-
-    var delay = 7000;
+    var delay = 7000;// delay time in milliseconds
  setTimeout(function(){
      window.location.reload();
  },delay)
