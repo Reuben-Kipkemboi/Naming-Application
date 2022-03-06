@@ -1,38 +1,35 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inconsolata', monospace;
 }
-body{
-     background: linear-gradient(to left, rgb(7, 23, 50), rgba(7, 23, 50, 0.7));
+body {
+    background: linear-gradient(to left, rgb(7, 23, 50), rgba(7, 23, 50, 0.7));
 }
-header{
+header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 2%;
 }
-.name{
+.name {
     width: 50%;
 }
-.name h1{
-    /* color: rgb(77, 179, 157); */
+
+.name h1 {
     color: rgb(238, 83, 130);
     font-size: 10vh;
     font-weight: bold;
     text-align: center;
 }
-.name h1 span{
+
+.name h1 span {
     color: white;
 }
-/* .name h3:hover{
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-size: 6vh;
-} */
-.name .slogan{
+
+.name .slogan {
     color: rgb(107, 244, 217);
     text-align: center;
     font-size: 4vh;
@@ -41,56 +38,88 @@ header{
     margin-top: 2%;
 
 }
-header img{
+.name a{
+    text-decoration: none;
+}
+.name a .more{
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    width: 30%;
+    font-size: 3vh;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(7, 23, 50);
+    display: block;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+.name a .more:hover{
+    /* color: rgb(7, 23, 50); */
+    color: white;
+    background: linear-gradient(to left, rgb(77, 179, 157), rgba(107, 244, 217, 0.4));
+}
+
+header img {
     width: 40%;
     height: 50vh;
     object-fit: cover;
     border-radius: 10px;
 
 }
-header img:hover{
+
+header img:hover {
     box-shadow: 4px 2px 20px rgb(77, 179, 157);
 }
-.form{
+
+.form {
     margin-top: 3%;
     background-color: white;
     padding: 8px 10px;
 }
-fieldset{
+
+fieldset {
     margin: 2% 5% 0 5%;
     padding: 20px;
     border: 2px solid rgb(7, 23, 50);
 }
-fieldset legend{
+
+fieldset legend {
     color: rgb(7, 23, 50);
     font-size: 3vh;
-    font-weight: bold;  
+    font-weight: bold;
 }
-form label{
+
+form label {
     font-size: 3.5vh;
     font-weight: bold;
 }
-form input[type='text']{
+
+form input[type='text'] {
     color: rgb(7, 23, 50);
     width: 25%;
     height: 5vh;
     font-style: italic;
     font-weight: bold;
 }
-label span{
+
+label span {
     font-weight: bold;
     color: red;
 }
-form select{
+
+form select {
     width: 25%;
     height: 5vh;
 }
-select option{
+
+select option {
     font-weight: bold;
     color: rgb(7, 23, 50);
     width: 100%;
 }
-form input[type='button']{
+
+form input[type='button'] {
     padding: 8px;
     width: 30%;
     color: rgb(107, 244, 217);
@@ -102,58 +131,69 @@ form input[type='button']{
     display: block;
     margin: 0 auto;
 }
-form input[type='button']:hover{
+
+form input[type='button']:hover {
     background: linear-gradient(to left, rgb(77, 179, 157), rgba(107, 244, 217, 0.4));
     color: rgb(7, 23, 50);
 }
-h4{
+
+h4 {
     text-align: center;
     margin: 2% 3%;
     font-size: 4vh;
     color: white;
 }
-.akan{
+
+.akan {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 3% 10% 0 10%;
 }
-.akan .gender-naming{
+
+.akan .gender-naming {
     color: rgb(107, 244, 217);
 }
-.gender-naming h5{
+
+.gender-naming h5 {
     font-size: 5vh;
     font-weight: bold;
     text-align: center;
     margin: 2% 3%;
     color: white;
 }
-.akan img{
+
+.akan img {
     height: 20vh;
     margin-right: -20%;
 }
-.gender-naming{
+
+.gender-naming {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.gender-naming ul li{
+
+.gender-naming ul li {
     line-height: 1.8;
 }
-.footer{
+
+.footer {
     color: white;
     text-align: center;
     margin: 2% 0 1% 0;
     background-color: rgb(77, 179, 157);
     line-height: 1.6;
-    
+
 }
-.footer:hover{
+
+.footer:hover {
     background: linear-gradient(to left, rgb(77, 179, 157), rgba(107, 244, 217, 0.4));
     color: rgb(7, 23, 50);
 }
-.footer strong{
+
+.footer strong {
     color: rgb(7, 27, 75);
 }

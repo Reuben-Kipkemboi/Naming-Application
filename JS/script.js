@@ -40,28 +40,27 @@ function validate() {
 
 //  mod - is the modulus function ( % )
 
-function calculateDay(){
+function calculateDay() {
     let year = document.getElementById('year').value;
-    let CC = parseInt(year.substring(0,2));
-    let YY = parseInt(year.substring(2,4));
+    let CC = parseInt(year.substring(0, 2));
+    let YY = parseInt(year.substring(2, 4));
     let MM = parseInt(document.getElementById("month").value);
     let DD = parseInt(document.getElementById("day").value);
-    let d = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7;
-    console.log(d.toFixed());  
+    let d = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
+    console.log(d.toFixed());
     return d.toFixed();
 }
 
 function choice() {
     var gender = document.getElementById("gender");
-    let position = calculateDay()-1;
+    let position = calculateDay() - 1;
     if (gender.value == 'male') {
         // console.log(males[position]);
         alert("Your name is" + " " + males[position] + " " + "which means a male born on " + " " + weekDays[position]);
-    }else if(gender.value == 'female'){
-            alert("Your name is" + " " + females[position] + " " + "Which means a female born on" + " " + weekDays[position]);
-    }
-    else{
-         alert("ENSURE TO HAVE THE CORRECT DETAILS")
+    } else if (gender.value == 'female') {
+        alert("Your name is" + " " + females[position] + " " + "Which means a female born on" + " " + weekDays[position]);
+    } else {
+        alert("ENSURE TO HAVE THE CORRECT DETAILS")
     }
     return false;
 }
@@ -71,8 +70,8 @@ btn.addEventListener('click', function (e) {
     calculateDay();
     choice();
     form.reset();
-    var delay = 7000;// delay time in milliseconds
- setTimeout(function(){
-     window.location.reload();
- },delay)
+    var delay = 7000; // delay time in milliseconds
+    setTimeout(function () {
+        window.location.reload();
+    }, delay)
 });
