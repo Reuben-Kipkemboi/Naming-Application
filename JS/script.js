@@ -56,9 +56,9 @@ function choice() {
     let position = calculateDay();
     if (gender.value == 'male') {
         // console.log(males[position]);
-        alert("Your name is" + " " + males[position].toUpperCase() + " " + "which means a male child born on " + " " + weekDays[position].toUpperCase());
+        document.write("Your name is" + " " + males[position].toUpperCase() + " " + "which means a male born on " + " " + weekDays[position].toUpperCase());
     }else if(gender.value == 'female'){
-            alert("Your name is" + " " + females[position].toUpperCase() + " " + "Which means a female child born on" + " " + weekDays[position].toUpperCase());
+            document.write("Your name is" + " " + females[position].toUpperCase() + " " + "Which means a female born on" + " " + weekDays[position].toUpperCase());
     }
     else{
          alert("")
@@ -71,9 +71,10 @@ btn.addEventListener('click', function (e) {
     calculateDay();
     choice();
     form.reset();
-});
 
-// var delay = 10000;
-// setTimeout(function(){
-//     window.location.reload()
-// }, delay);
+
+    var delay = 7000;
+ setTimeout(function(){
+     window.location.reload();
+ },delay)
+});
