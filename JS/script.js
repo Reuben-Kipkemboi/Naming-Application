@@ -59,7 +59,7 @@ function choice() {
             alert("Your name is" + " " + females[position].toUpperCase() + " " + "And your birthday is on" + " " + weekDays[position].toUpperCase());
     }
     else{
-         alert(""")
+         alert("")
     }
     return true;
 }
