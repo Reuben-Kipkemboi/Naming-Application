@@ -122,9 +122,12 @@ h4{
 .akan .gender-naming{
     color: rgb(107, 244, 217);
 }
-.gender-naming h4{
-    font-size: 4vh;
+.gender-naming h5{
+    font-size: 5vh;
     font-weight: bold;
+    text-align: center;
+    margin: 2% 3%;
+    color: white;
 }
 .akan img{
     height: 20vh;
@@ -138,4 +141,19 @@ h4{
 }
 .gender-naming ul li{
     line-height: 1.8;
+}
+.footer{
+    color: white;
+    text-align: center;
+    margin: 2% 0 1% 0;
+    background-color: rgb(77, 179, 157);
+    line-height: 1.6;
+    
+}
+.footer:hover{
+    background: linear-gradient(to left, rgb(77, 179, 157), rgba(107, 244, 217, 0.4));
+    color: rgb(7, 23, 50);
+}
+.footer strong{
+    color: rgb(7, 27, 75);
 }

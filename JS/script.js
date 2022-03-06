@@ -54,9 +54,9 @@ function choice() {
     let position = calculateDay();
     if (gender.value == 'male') {
         // console.log(males[position]);
-        alert("Your name is" + " " + males[position].toUpperCase() + " " + "And your birthday is on" + " " + weekDays[position].toUpperCase());
+        alert("Your name is" + " " + males[position].toUpperCase() + " " + "which means a male child born on " + " " + weekDays[position].toUpperCase());
     }else if(gender.value == 'female'){
-            alert("Your name is" + " " + females[position].toUpperCase() + " " + "And your birthday is on" + " " + weekDays[position].toUpperCase());
+            alert("Your name is" + " " + females[position].toUpperCase() + " " + "Which means a female child born on" + " " + weekDays[position].toUpperCase());
     }
     else{
          alert("")
