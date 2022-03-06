@@ -1,4 +1,4 @@
-// we store the day of the week in an array
+// days of the week in an array
 const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 // Male names
 const males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
@@ -6,6 +6,8 @@ const males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 const females = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 let btn = document.getElementById("submit");
 // var gender = document.getElementById("gender");
+
+let form = document.getElementById("userForm");
 
 
 // validating the form
@@ -68,4 +70,10 @@ btn.addEventListener('click', function (e) {
     validate();
     calculateDay();
     choice();
+    form.reset();
 });
+
+// var delay = 10000;
+// setTimeout(function(){
+//     window.location.reload()
+// }, delay);
