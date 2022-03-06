@@ -4,27 +4,20 @@ const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Frida
 const males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 // Female Names
 const females = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-// declare a value that takes the day value
-var day
-var CC, YY, MM, DD, dayOfWeek, valueOfDay;
-const gender = document.getElementById("gender");
-// const maleGender = document.getElementById("male");
-// const femaleGender = document.getElementById('female');
-let btn = document.getElementById('submit')
+let btn = document.getElementById("submit");
+// var gender = document.getElementById("gender");
+
 
 // validating the form
 function validate() {
-    var day = document.userForm.day.value;
-    var month = document.userForm.month.value;
-    var year = document.userForm.year.value;
-    if (day == null || day == "" || day > 31 || day <= 0 || day.length != 2) {
+    if (day.value == null || day.value == "" || day.value > 31 || day.value <= 0 || day.value.length != 2) {
         alert("Kindly enter your correct Date of Birth");
         return false;
 
-    } else if (month == null || month == "" || month > 12 || month <= 0 || month.length != 2) {
+    } else if (month.value == null || month.value == "" || month.value > 12 || month.value <= 0 || month.value.length != 2) {
         alert("Enter the correct Birthday Month");
         return false;
-    } else if (year == null || year == "" || year > 2022 || year <= 1900 || year.length != 4) {
+    } else if (year.value == null || year.value == "" || year.value > 2022 || year.value <= 1900 || year.value.length != 4) {
         alert("Enter the correct Year Of Birth");
         return false;
     } else {
@@ -45,40 +38,34 @@ function validate() {
 
 //  mod - is the modulus function ( % )
 
-function calculateDay() {
-    year = document.getElementById("year").value;
-    CC = parseInt(year.slice(0,2));
-    YY = parseInt(year.substring(2));
-    MM = parseInt(document.getElementById("month").value);
-    DD = parseInt(document.getElementById("day").value);
-    dayOfWeek = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
-    let day = dayOfWeek.toFixed(0);
-    console.log(day);
-    return day;
+function calculateDay(){
+    let year = document.getElementById('year').value;
+    let CC = parseInt(year.substring(0,2));
+    let YY = parseInt(year.substring(2,4));
+    let MM = parseInt(document.getElementById("month").value);
+    let DD = parseInt(document.getElementById("day").value);
+    let d = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7;
+    console.log(d.toFixed());  
+    return d.toFixed();
+}
 
-    if(day == 1 && maleGender == male){
-        alert("Your name is" + " " +males[0].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[0].toUpperCase());
-    }else if(day == 2 && maleGender == male){
-        alert("Your name is" + " " +males[1].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[1].toUpperCase());
-    }else if(day == 3 && maleGender == male){
-        alert("Your name is" + " " +males[2].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[2].toUpperCase());
-    }else if(day == 4 && maleGender == male){
-        alert("Your name is" + " " +males[3].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[3].toUpperCase());
-    }else if(day == 4 && maleGender == male){
-        alert("Your name is" + " " +males[4].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[4].toUpperCase());
-    }else if(day == 5 && maleGender == male){
-        alert("Your name is" + " " +males[5].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[5].toUpperCase());
+function choice() {
+    var gender = document.getElementById("gender");
+    let position = calculateDay();
+    if (gender.value == 'male') {
+        // console.log(males[position]);
+        alert("Your name is" + " " + males[position].toUpperCase() + " " + "And your birthday is on" + " " + weekDays[position].toUpperCase());
+    }else if(gender.value == 'female'){
+            alert("Your name is" + " " + females[position].toUpperCase() + " " + "And your birthday is on" + " " + weekDays[position].toUpperCase());
     }
-    else if(day == 6 && maleGender == male){
-        alert("Your name is" + " " +males[6].toUpperCase()+ " " + "And your birthday is on" + " " +weekDays[6].toUpperCase());
+    else{
+         alert(""")
     }
- }
-
- btn.addEventListener('click', function(e){
-     e.preventDefault ();
-     validate();
-
-     calculateDay();
-
- });
-
+    return true;
+}
+btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    validate();
+    calculateDay();
+    choice();
+});
