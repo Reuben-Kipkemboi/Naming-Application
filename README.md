@@ -24,6 +24,11 @@ Akan Naming application is an application to get the users name and the day of t
 | Saturday    | Kwame       | Ama         |
 
 The name corresponds with the day of the week in which your were born.
+<hr>
+
+![Form image](./Images/akan.png)
+
+<hr>
 
 ## User Stories
 * Users will be able to see a small description of the application from the homepage.
