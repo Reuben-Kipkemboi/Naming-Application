@@ -26,7 +26,21 @@ Akan Naming application is an application to get the users name and the day of t
 The name corresponds with the day of the week in which your were born.
 <hr>
 
-![Form image](./Images/akan.png)
+#### **Introduction**
+
+![Introduction to Akan naming](./Images/Intro.png)
+
+<hr>
+
+#### **User Form**
+
+![Form filled by the user](./Images/form.png)
+
+<hr>
+
+#### **Some AKAN Names with their gender**
+
+![Male and female Names](./Images/Akan-names.png)
 
 <hr>
 
