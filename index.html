@@ -21,7 +21,7 @@
 <body>
     <!-- brief intro about the application -->
     <header>
-        <img src="./Images/image.webp" alt="my-name">
+        <img src="./Images/ghana.png" alt="my-name">
         <div class="name">
             <h1>AKAN <span>NAMES.</span></h1>
             <p class="slogan">According to Ghanian culture, Children are given their first names as a
@@ -32,9 +32,43 @@
         </div>
     </header>
     <main>
-        <section class="form">
-            <fieldset>
-                <legend>FILL THE DAY, MONTH AND YEAR YOU WERE BORN AND GENDER</legend>
+        <section class="form col-md-6 mx-auto">
+            <!-- <fieldset>
+                <legend>FILL THE DAY, MONTH AND YEAR YOU WERE BORN AND GENDER</legend> -->
+
+                <form>
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <p class="output">Your Akan Name appears here...</p>
+                    <div class="row mb-4">
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form3Example1" class="form-control" />
+                          <label class="form-label" for="form3Example1">First name</label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form3Example2" class="form-control" />
+                          <label class="form-label" for="form3Example2">Last name</label>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                      <input type="email" id="form3Example3" class="form-control" />
+                      <label class="form-label" for="form3Example3">Email address</label>
+                    </div>
+                  
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                      <input type="password" id="form3Example4" class="form-control" />
+                      <label class="form-label" for="form3Example4">Password</label>
+                    </div>
+                    <!-- The submit button -->
+                    <input type="button" class="btn btn-info" name="submit" value="VIEW NAME &#187;" id="submit">
+                </form>
+                  </form>
                 <form name="userForm" id="userForm">
                     <!-- User form fields  -->
                     <label for="birthDay">ENTER YOUR DATE OF BIRTH <span>*</span></label>
@@ -57,10 +91,8 @@
                         <option value="female" id="female">FEMALE</option>
                     </select>
                     <br><br>
-                    <!-- The submit button -->
-                    <input type="button" name="submit" value="VIEW NAME &#187;" id="submit">
-                </form>
-            </fieldset>
+                    
+            <!-- </fieldset> -->
         </section>
     </main>
     <h4>Here are some of the Akan Names</h4>
