@@ -56,9 +56,10 @@ function choice() {
     let position = calculateDay() - 1;
     if (gender.value == 'male') {
         // console.log(males[position]);
-        alert("Your name is" + " " + males[position] + " " + "which means a male born on " + " " + weekDays[position]);
+        
+        document.getElementById("output").innerText="Your name is" + " " + males[position] + " " + "which means a male born on " + " " + weekDays[position];
     } else if (gender.value == 'female') {
-        alert("Your name is" + " " + females[position] + " " + "Which means a female born on" + " " + weekDays[position]);
+        document.getElementById("output").innerText="Your name is" + " " + females[position] + " " + "Which means a female born on" + " " + weekDays[position];
     } else {
         alert("ENSURE TO HAVE THE CORRECT DETAILS")
     }

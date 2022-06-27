@@ -212,11 +212,11 @@ h4 {
 }
 
 .output{
-    height: 5vh;
+    height: 7vh;
     text-align: center;
     width: 100%;
     background: rgb(7, 23, 50);
     color:rgb(238, 83, 130);
     font-weight: bold;
-    padding: 2px;
+    padding: 1.5%;
 }
