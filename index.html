@@ -33,66 +33,47 @@
     </header>
     <main>
         <section class="form col-md-6 mx-auto">
-            <!-- <fieldset>
-                <legend>FILL THE DAY, MONTH AND YEAR YOU WERE BORN AND GENDER</legend> -->
 
-                <form>
-                    <!-- 2 column grid layout with text inputs for the first and last names -->
-                    <p class="output">Your Akan Name appears here...</p>
-                    <div class="row mb-4">
-                      <div class="col">
-                        <div class="form-outline">
-                          <input type="text" id="form3Example1" class="form-control" />
-                          <label class="form-label" for="form3Example1">First name</label>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="form-outline">
-                          <input type="text" id="form3Example2" class="form-control" />
-                          <label class="form-label" for="form3Example2">Last name</label>
-                        </div>
-                      </div>
-                    </div>
-                  
-                    <!-- Email input -->
-                    <div class="form-outline mb-4">
-                      <input type="email" id="form3Example3" class="form-control" />
-                      <label class="form-label" for="form3Example3">Email address</label>
-                    </div>
-                  
-                    <!-- Password input -->
-                    <div class="form-outline mb-4">
-                      <input type="password" id="form3Example4" class="form-control" />
-                      <label class="form-label" for="form3Example4">Password</label>
-                    </div>
-                    <!-- The submit button -->
-                    <input type="button" class="btn btn-info" name="submit" value="VIEW NAME &#187;" id="submit">
-                </form>
-                  </form>
-                <form name="userForm" id="userForm">
-                    <!-- User form fields  -->
-                    <label for="birthDay">ENTER YOUR DATE OF BIRTH <span>*</span></label>
-                    <br>
-                    <input type="text" id="day" name="day" placeholder="DOB e,g 12 for 12th day or 02 of the month"
-                        required>
-                    <br><br>
-                    <label for="birthDay">ENTER YOUR MONTH OF BIRTH <span>*</span></label><br>
-                    <input type="text" id="month" name="month" placeholder="Month of Birth eg 05 for May" required>
-                    <br><br>
-                    <label for="birthDay">ENTER YOUR YEAR OF BIRTH <span>*</span></label><br>
-                    <input type="text" id="year" name="year" placeholder="Year of Birth in figures eg 2022" required>
+            <form name="userForm" id="userForm">
 
-                    <br><br>
-                    <label for="gender">SELECT YOUR GENDER <span>*</span></label>
-                    <br>
-                    <!-- select option for gender -->
-                    <select name="gender" id="gender" required>
-                        <option value="male" id="male">MALE</option>
-                        <option value="female" id="female">FEMALE</option>
-                    </select>
-                    <br><br>
-                    
-            <!-- </fieldset> -->
+                <p class="output mb-4">Your Akan Name appears here...</p>
+                <small class="muted">Date, Month and year all in figures</small>
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="form-outline p-1">
+                            <input type="number" id="day" name="day" class="form-control" />
+                            <label class="form-label" for="dob">ENTER YOUR DATE OF BIRTH </label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline  p-1">
+                            <input type="number" id="month" name="month" class="form-control" />
+                            <label class="form-label" for="">ENTER YOUR BIRTH MONTH</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="form-outline p-1">
+                            <input type="number" id="year" name="year" class="form-control" />
+                            <label class="form-label" for="dob">ENTER YOUR YEAR OF BIRTH </label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <select class="browser-default custom-select col-md-12 mb-4 p-1" name="gender" id="gender">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="male" id="male">MALE</option>
+                            <option value="female" id="female">FEMALE</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <!-- The submit button -->
+                <input type="button" class="btn btn-info" name="submit" value="VIEW NAME &#187;" id="submit">
+            </form>
+
         </section>
     </main>
     <h4>Here are some of the Akan Names</h4>
