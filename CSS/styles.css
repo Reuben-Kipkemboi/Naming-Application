@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Overlock', cursive;
 }
 body {
     background: linear-gradient(to left, rgb(7, 23, 50), rgba(7, 23, 50, 0.7));
