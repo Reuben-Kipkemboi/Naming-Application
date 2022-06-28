@@ -169,7 +169,8 @@ h4 {
 }
 
 .akan .gender-naming {
-    color: rgb(107, 244, 217);
+    color: #fff;
+    font-weight: 700;
 }
 
 .gender-naming h5 {
