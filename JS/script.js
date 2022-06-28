@@ -71,7 +71,7 @@ btn.addEventListener('click', function (e) {
     calculateDay();
     choice();
     form.reset();
-    var delay = 7000; // delay time in milliseconds
+    var delay = 9000; // delay time in milliseconds
     setTimeout(function () {
         window.location.reload();
     }, delay)

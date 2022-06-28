@@ -9,8 +9,13 @@
 
 body {
     /* background: linear-gradient(to left, rgb(7, 23, 50), rgba(7, 23, 50, 0.7));*/
-    background-color: rgb(7, 23, 50);
+    /* background-color: rgb(7, 23, 50); */
     border-radius: 100% 0% 0% 100% / 100% 0% 100% 0%;
+    background-image: url('/Images/ghana.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
 }
 
 header {
@@ -40,12 +45,14 @@ header {
 }
 
 .name .slogan {
-    color: rgb(107, 244, 217);
+    /* color: rgb(107, 244, 217); */
+    color: #fff;
     text-align: center;
     font-size: 4vh;
     font-weight: bold;
     line-height: 1.6;
     margin-top: 2%;
+    font-style: italic;
 
 }
 
@@ -81,10 +88,6 @@ header img {
     /* border-radius: 100% 0% 0% 100% / 100% 0% 100% 0% ; */
 
 
-}
-
-header img:hover {
-    box-shadow: 4px 2px 20px rgb(77, 179, 157);
 }
 
 .form {
@@ -211,12 +214,21 @@ h4 {
     color: rgb(7, 27, 75);
 }
 
-.output{
+.output {
     height: 7vh;
     text-align: center;
     width: 100%;
     background: rgb(7, 23, 50);
-    color:rgb(238, 83, 130);
+    color: rgb(238, 83, 130);
     font-weight: bold;
     padding: 1.5%;
+}
+
+.form{
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
